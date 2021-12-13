@@ -1,12 +1,19 @@
-// App.js
 import './App.css';
+import Profile from './components/Profile';
+import user from './components/user.json';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <h1>TEST 1.2.3</h1>
+      {/* <h1>TEST 1.2.4.5</h1> */}
+
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
     </div>
   );
 }
-
-export default App;
