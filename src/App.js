@@ -5,8 +5,6 @@ import user from './components/user.json';
 export default function App() {
   return (
     <div className="App">
-      {/* <h1>TEST 1.2.4.5</h1> */}
-
       <Profile
         username={user.username}
         tag={user.tag}
