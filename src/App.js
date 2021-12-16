@@ -11,18 +11,9 @@ import transactions from './components/transactions.json';
 export default function App() {
   return (
     <div className="App">
-      <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
-      />
-
+      <Profile {...user} />
       <Statistics title="Upload stats" stats={data} />
-
       <FriendList friends={friends} />
-
       <TransactionHistory items={transactions} />
     </div>
   );
