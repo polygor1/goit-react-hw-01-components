@@ -49,7 +49,7 @@ ul {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-li {
+.stats li {
   display: flex;
   flex-flow: column;
   border: 1px solid rgba(128, 128, 128, 0.096);

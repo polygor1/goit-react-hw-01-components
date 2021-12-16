@@ -29,7 +29,9 @@ h2 {
   line-height: 1.1666;
 }
 
-.item {
+.stat-list .item {
+  display: flex;
+  flex-flow: column;
   /* сюди вставити випадковий колір */
   background-color: rgb(105, 105, 105);
   color: white;
