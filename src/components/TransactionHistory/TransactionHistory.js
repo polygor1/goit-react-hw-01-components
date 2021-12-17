@@ -1,10 +1,9 @@
 import './TransactionHistory.css';
-import TransactionItem from './TransactionItem';
+// import TransactionItem from './TransactionItem';
 
 export default function TransactionHistory({ items }) {
-  console.log(items);
   return (
-    <table class="transaction-history">
+    <table className="transaction-history">
       <thead>
         <tr>
           <th>Type</th>
@@ -15,9 +14,15 @@ export default function TransactionHistory({ items }) {
 
       <tbody>
         {items.map(item => (
-          <TransactionItem item={item} />
+          <tr key={item.id} className="item">
+            <td>{item.type}</td>
+            <td>{item.amount}</td>
+            <td>{item.currency}</td>
+          </tr>
         ))}
       </tbody>
     </table>
   );
 }
+
+// <TransactionItem item={item} />
