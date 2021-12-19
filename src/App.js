@@ -13,8 +13,8 @@ export default function App() {
     <div className="App">
       <Profile {...user} />
       <Statistics title="Upload stats" stats={data} />
-      <FriendList friends={friends} />
-      <TransactionHistory items={transactions} />
+      <FriendList props={friends} />
+      <TransactionHistory props={transactions} />
     </div>
   );
 }

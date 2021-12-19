@@ -1,4 +1,4 @@
-h2 {
+.title {
   margin: 0;
 }
 
@@ -17,26 +17,26 @@ h2 {
   text-transform: uppercase;
 }
 
-.stat-list {
+.statList {
   display: grid;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  padding: 0;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
+  padding: 0;
+  margin: 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1666;
 }
 
-.stat-list .item {
+.item {
   display: flex;
   flex-flow: column;
   /* сюди вставити випадковий колір */
   background-color: goldenrod;
 }
 
-.stat-list .label {
+.label {
   color: white;
   margin: 0;
   padding: 8px;

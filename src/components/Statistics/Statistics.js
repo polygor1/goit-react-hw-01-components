@@ -1,21 +1,21 @@
-import './Statistics.css';
+import styles from './Statistics.module.css';
 
 export default function Statistics({ title, stats }) {
   return (
-    <section className="statistics">
-      {title && <h2 className="title">{title}</h2>}
-      <ul className="stat-list">
+    <section className={styles.statistics}>
+      {title && <h2 className={styles.title}>{title}</h2>}
+      <ul className={styles.statList}>
         {stats.map(item => (
           <li
             key={item.id}
-            className="item"
+            className={styles.item}
             style={{
               backgroundColor:
                 '#' + Math.floor(Math.random() * 16777215).toString(16),
             }}
           >
-            <span className="label">{item.label}</span>
-            <span className="percentage">{item.percentage}%</span>
+            <span className={styles.label}>{item.label}</span>
+            <span className={styles.percentage}>{item.percentage}%</span>
           </li>
         ))}
       </ul>

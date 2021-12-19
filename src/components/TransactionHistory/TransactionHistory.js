@@ -1,9 +1,10 @@
-import './TransactionHistory.css';
+import styles from './TransactionHistory.module.css';
+
 import TransactionItem from './TransactionItem';
 
-export default function TransactionHistory({ items }) {
+export default function TransactionHistory({ props }) {
   return (
-    <table className="transaction-history">
+    <table className={styles.container}>
       <thead>
         <tr>
           <th>Type</th>
@@ -13,9 +14,9 @@ export default function TransactionHistory({ items }) {
       </thead>
 
       <tbody>
-        {items.map(item => (
+        {props.map(item => (
           <TransactionItem
-            id={item.id}
+            key={item.id}
             type={item.type}
             amount={item.amount}
             currency={item.currency}

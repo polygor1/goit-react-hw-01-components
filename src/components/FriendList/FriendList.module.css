@@ -1,10 +1,12 @@
-.friend-list {
+.container {
   display: block;
   width: 300px;
   margin: 20px auto;
+  padding: 0;
+  list-style: none;
 }
 
-.friend-list .item {
+.item {
   margin-top: 10px;
   display: flex;
   flex-direction: row;
@@ -15,23 +17,23 @@
   background-color: rgb(248, 248, 248);
 }
 
-.friend-list .status {
+.status {
   width: 20px;
   height: 20px;
   margin-left: 20px;
-  /* random change color */
+  /* random change background-color */
   background-color: goldenrod;
   border-radius: 50%;
   border: none;
 }
 
-.friend-list .avatar {
+.avatar {
   width: 40px;
   margin: 0 20px 0;
   border-radius: 2px;
 }
 
-.friend-list .name {
+.name {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.1666;

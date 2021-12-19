@@ -1,12 +1,19 @@
-export default function FriendListItem({ avatar, name, isOnline, id }) {
+import styles from './FriendList.module.css';
+
+export default function FriendListItem({ avatar, name, isOnline }) {
   return (
-    <li className="item">
+    <li className={styles.item}>
       <span
-        className="status"
+        className={styles.status}
         style={{ backgroundColor: isOnline ? 'green' : 'red' }}
       ></span>
-      <img className="avatar" src={avatar} alt="User avatar" width="48" />
-      <p className="name">{name}</p>
+      <img
+        className={styles.avatar}
+        src={avatar}
+        alt="User avatar"
+        width="48"
+      />
+      <p className={styles.name}>{name}</p>
     </li>
   );
 }
