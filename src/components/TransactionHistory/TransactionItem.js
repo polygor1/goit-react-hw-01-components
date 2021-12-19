@@ -1,8 +1,6 @@
-export default function TransactionItem({ item }) {
-  const { id, type, amount, currency } = item;
-
+export default function TransactionItem({ id, type, amount, currency }) {
   return (
-    <tr key={id} className="item">
+    <tr className="item">
       <td>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>

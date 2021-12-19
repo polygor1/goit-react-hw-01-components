@@ -1,6 +1,6 @@
 export default function FriendListItem({ avatar, name, isOnline, id }) {
   return (
-    <li key={id} className="item">
+    <li className="item">
       <span
         className="status"
         style={{ backgroundColor: isOnline ? 'green' : 'red' }}

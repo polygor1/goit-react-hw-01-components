@@ -11,7 +11,7 @@ export default function Statistics({ title, stats }) {
             className="item"
             style={{
               backgroundColor:
-                '#' + Math.floor(Math.random() * 16581375).toString(16),
+                '#' + Math.floor(Math.random() * 16777215).toString(16),
             }}
           >
             <span className="label">{item.label}</span>
